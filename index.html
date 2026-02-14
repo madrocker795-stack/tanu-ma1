@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OFFICIAL SIMP PORTAL 2026</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="cursor">💖</div>
+
+    <div class="main-wrapper">
+        <marquee class="glitch-text"> ⚠️ WARNING: HIGH LEVELS OF CUTENESS DETECTED ⚠️ </marquee>
+
+        <header>
+            <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHJueGZueGZueGZueGZueGZueGZueGZueGZueGZueGZueGZueGZ1JmVwPXYxX2ludGVybmFsX2dpZl9ieV9pZCheckZ&rid=giphy.gif" class="profile-pic">
+            <h1>The Official [Her Name] Fan Club</h1>
+            <p>Population: 1 (Me. I am the President.)</p>
+        </header>
+
+        <section class="section">
+            <h2>The "Fine Print" Contract 📜</h2>
+            <div class="contract-box">
+                <p>By staying on this site, you agree to:</p>
+                <ul>
+                    <li>✅ Give me your hoodies (indefinite loan).</li>
+                    <li>✅ Laugh at my jokes (even the 3/10 ones).</li>
+                    <li>✅ Admit that I am slightly better at Mario Kart.</li>
+                    <li>✅ Be the cutest person in every room we enter.</li>
+                </ul>
+                <p><i>Signed: The Guy Who Made This Website</i></p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Infinite Compliment Machine 🎰</h2>
+            <p>Click for a boost of ego:</p>
+            <div id="compliment-display">"Press the button, nerd."</div>
+            <button class="goofy-btn" onclick="generateCompliment()">SPIN THE WHEEL</button>
+        </section>
+
+        <footer>
+            <p>Made with 0% professional skill and 100% "I hope she likes this."</p>
+            <p>Happy Valentine's Day! ❤️</p>
+        </footer>
+    </div>
+
+    <script>
+        // Custom Cursor Logic
+        const cursor = document.getElementById('cursor');
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.left = e.pageX + 'px';
+            cursor.style.top = e.pageY + 'px';
+        });
+
+        // Compliment Generator
+        const compliments = [
+            "Your laugh is my favorite song. 🎵",
+            "You are the 'Add to Cart' of my life. 🛒",
+            "I'd share my last fry with you. Maybe. 🍟",
+            "You're smarter than ChatGPT. 🧠",
+            "Even your 'morning hair' is a 10/10. ☀️",
+            "I love you more than I love complaining about things. 🗣️",
+            "You're the CSS to my HTML. You make me pretty. ✨"
+        ];
+
+        function generateCompliment() {
+            const display = document.getElementById('compliment-display');
+            const random = compliments[Math.floor(Math.random() * compliments.length)];
+            display.innerText = random;
+            display.style.transform = "scale(1.2)";
+            setTimeout(() => display.style.transform = "scale(1)", 200);
+        }
+    </script>
+</body>
+</html>
