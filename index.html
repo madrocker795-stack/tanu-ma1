@@ -71,8 +71,10 @@
             display.innerText = random;
             display.style.transform = "scale(1.2)";
             setTimeout(() => display.style.transform = "scale(1)", 200);
+        document.getElementById('compliment-display').style.color = "#" + Math.floor(Math.random()*16777215).toString(16);
         }
     </script>
 </body>
 
 </html>
+
